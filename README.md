@@ -24,7 +24,7 @@ numjobs=1<br>
 size=500m<br>
 directory=/partition/data<br>
 
-Giải thích một số parameter: <br>
+Giải thích một số parameters: <br>
  rw = randread: Đọc file theo đọc ngẫu nhiên<br>
  Có thể nhận nhưng giá trị sau đây:
  read            Đọc tuần tự<br>
