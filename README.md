@@ -27,12 +27,13 @@ directory=/partition/data<br>
 Giải thích một số parameters: <br>
  rw = randread: Đọc file theo đọc ngẫu nhiên<br>
  Có thể nhận nhưng giá trị sau đây:
- read            Đọc tuần tự<br>
- write           Ghi tuần tự <br>
- randwrite       Ghi Random<br>
- randread        Đọc random<br>
- rw,readwrite    Cả đọc và ghi tuần tự <br>
- randrw          Cả đọc và ghi random<br>
+ 
+ read:            Đọc tuần tự<br>
+ write:           Ghi tuần tự <br>
+ randwrite:       Ghi Random<br>
+ randread:        Đọc random<br>
+ rw,readwrite:    Cả đọc và ghi tuần tự <br>
+ randrw:          Cả đọc và ghi random<br>
  bs = 4k,4k: block size là 4k<br>
  numjobs = 1: 1 tiến trình được thực hiện<br> 
  size = 500m: Quá trình đọc file là 500m<br>
