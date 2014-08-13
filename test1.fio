@@ -1,0 +1,4 @@
+[random-read]
+rw=randwrite
+size=1G
+directory=/data
