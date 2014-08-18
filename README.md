@@ -1,19 +1,25 @@
-#FIO---Test-performance-hard-disk
+# Hướng dẫn sử dụng FIO để kiểm tra hiệu năng ổ đĩa 
 ================================
 
-#I. Giới thiệu về FIO 
+# I. Giới thiệu về FIO 
 
 FIO viết tắt của Flexible IO Tester là công cụ được sử dụng để cho phép test hiệu năng của IO. 
 
-#II. FIO làm việc như thế nào
+# II. FIO làm việc như thế nào
 
 Bước đầu tiên là mô phỏng các công việc, sau đó viết viết 1 job file mô phỏng quá trình cài đặt. Trong job file sẽ chứa các phân đoạn global được sử dụng để chia sẻ các parameters, một hoặc nhiều tiến trình có thể được đặt trong file job này. Khi file job này chạy sẽ phân tích file và thiết lập mọi thứ như miêu tả. Trong file job có thể chứa các parameter cơ bản sau:
-#III. Quá trình tiến hành kiểm tra
-##3.1 Quá trình tạo 
+
+# III. Quá trình tiến hành kiểm tra
+
+## 3.1 Quá trình tạo 
 - B1: Add 1 ổ cứng vào
 - B2: Tạo partition và mount vào 1 thư mục
-- B3: Chạy lệnh sau: # apt-get install fio
-- B4: Tạo 1 file như sau: #vi randread.fio với nội dung như sau:
+- B3: Chạy lệnh sau: 
+
+```sh apt-get install fio```
+
+- B4: Tạo 1 file như sau: 
+```sh #vi randread.fio với nội dung như sau:``
 
 ```sh 
 [randread]
