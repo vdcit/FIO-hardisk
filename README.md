@@ -12,7 +12,7 @@ Bước đầu tiên là mô phỏng các công việc, sau đó viết viết 1
 ##3.1 Quá trình tạo 
 - B1: Add 1 ổ cứng vào
 - B2: Tạo partition và mount vào 1 thư mục
-- B3: Chạy lệnh sau: #apt-get install fio
+- B3: Chạy lệnh sau: # apt-get install fio
 - B4: Tạo 1 file như sau: #vi randread.fio với nội dung như sau:
 
 ```sh 
@@ -30,19 +30,18 @@ directory=/partition/data
 Giải thích một số parameters:
  rw = randread: Đọc file theo đọc ngẫu nhiên
  Có thể nhận nhưng giá trị sau đây:
- ```sh
- read:            Đọc tuần tự<br>
- write:           Ghi tuần tự <br>
- randwrite:       Ghi Random<br>
- randread:        Đọc random<br>
- rw,readwrite:    Cả đọc và ghi tuần tự <br>
- randrw:          Cả đọc và ghi random<br>
- bs = 4k,4k: block size là 4k<br>
- numjobs = 1: 1 tiến trình được thực hiện<br> 
- size = 500m: Quá trình đọc file là 500m<br>
+ read:            Đọc tuần tự
+ write:           Ghi tuần tự
+ randwrite:       Ghi Random
+ randread:        Đọc random
+ rw,readwrite:    Cả đọc và ghi tuần tự
+ randrw:          Cả đọc và ghi random
+ bs = 4k,4k: block size là 4k
+ numjobs = 1: 1 tiến trình được thực hiện 
+ size = 500m: Quá trình đọc file là 500m
  directory = /partition/data: kiểm tra test trên thư mục data
-``` 
-B5: Sau khi tạo xong file ta thực hiện lệnh sau: #fio randread.fio
+ 
+B5: Sau khi tạo xong file ta thực hiện lệnh sau: # fio randread.fio
 
 ##3.2 Một số ví dụ khác
 
