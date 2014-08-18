@@ -13,16 +13,19 @@ Bước đầu tiên là mô phỏng các công việc, sau đó viết viết 1
 B1: Add 1 ổ cứng vào<br>
 B2: Tạo partition và mount vào 1 thư mục<br> 
 B3: Chạy lệnh sau: #apt-get install fio<br>
-B4: Tạo 1 file như sau: #vi randread.fio với nội dung như sau:<br>
-[randread]<br>
-ioengine=libaio<br>
-iodepth=1<br>
-rw=randread<br>
-bs=4k,4k<br>
-direct=1<br>
-numjobs=1<br>
-size=500m<br>
-directory=/partition/data<br>
+B4: Tạo 1 file như sau: #vi randread.fio với nội dung như sau:
+
+```sh 
+[randread]
+ioengine=libaio
+iodepth=1
+rw=randread
+bs=4k,4k
+direct=1
+numjobs=1
+size=500m
+directory=/partition/data
+```
 
 Giải thích một số parameters: <br>
  rw = randread: Đọc file theo đọc ngẫu nhiên<br>
