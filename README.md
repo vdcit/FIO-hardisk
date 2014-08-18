@@ -44,7 +44,7 @@ Giải thích một số parameters:
 - size = 500m: Quá trình đọc file là 500m
 - directory = /partition/data: kiểm tra test trên thư mục data
  
-B5: Sau khi tạo xong file ta thực hiện lệnh sau: `fio randread.fio`
+- B5: Sau khi tạo xong file ta thực hiện lệnh sau: `fio randread.fio`
 
 ##3.2 Một số ví dụ khác
 
