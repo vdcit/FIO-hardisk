@@ -14,9 +14,7 @@ Bước đầu tiên là mô phỏng các công việc, sau đó viết viết 1
 ## 3.1 Quá trình tạo 
 - B1: Add 1 ổ cứng vào
 - B2: Tạo partition và mount vào 1 thư mục
-- B3: Chạy lệnh sau: 
-
-```sh apt-get install fio```
+- B3: Chạy lệnh sau: `apt-get install fio`
 
 - B4: Sử dụng lệnh `vi` Tạo 1 file như sau với nội dung như sau : 
 
