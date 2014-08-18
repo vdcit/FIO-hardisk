@@ -62,12 +62,12 @@ directory=/partition/data<br>
 ```
 3.2.2 Có thể tạo ra đồng thời nhiều quá trình ghi file bằng thay đổi giá trị numjobs
 ```sh
-[randread]<br>
-ioengine=libaio<br>
-iodepth=1<br>
-rw=randread<br>
-numjobs=4<br>
-size=500m<br>
+[randread]
+ioengine=libaio
+iodepth=1
+rw=randread
+numjobs=4
+size=500m
 directory=/partition/data
 ```
 #IV. Các tài liệu tham khảo 
