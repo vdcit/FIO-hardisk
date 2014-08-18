@@ -18,9 +18,7 @@ Bước đầu tiên là mô phỏng các công việc, sau đó viết viết 1
 
 ```sh apt-get install fio```
 
-- B4: Tạo 1 file như sau: 
-
-```sh #vi randread.fio với nội dung như sau:``
+- B4: Sử dụng lệnh `vi` Tạo 1 file như sau với nội dung như sau : 
 
 ```sh 
 [randread]
