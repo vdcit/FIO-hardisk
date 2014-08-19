@@ -42,7 +42,7 @@ Giải thích một số parameters:
  </ul>
 - bs = 4k,4k: block size là 4k
 - numjobs = 1: 1 tiến trình được thực hiện 
-- size = 500m: Quá trình đọc file là 500m
+- size = 500m: Quá trình đọc file là 500MB
 - directory = /partition/data: kiểm tra test trên thư mục data
  
 - B5: Sau khi tạo xong file ta thực hiện lệnh sau: `fio randread.fio`
