@@ -73,8 +73,8 @@ directory=/partition/data
 ```
 #IV. Các tài liệu tham khảo 
 
-`http://git.kernel.dk/?p=fio.git;a=blob;f=HOWTO;h=ea8730caea033ec4fce10d00ceef7256170bfd8e;hb=HEAD`
+http://git.kernel.dk/?p=fio.git;a=blob;f=HOWTO;h=ea8730caea033ec4fce10d00ceef7256170bfd8e;hb=HEAD
 
-`http://git.kernel.dk/?p=fio.git;a=tree;f=examples;h=429dbcedeb7db411f3cac0789a3413cd96b4a516;hb=HEAD`
+http://git.kernel.dk/?p=fio.git;a=tree;f=examples;h=429dbcedeb7db411f3cac0789a3413cd96b4a516;hb=HEAD`
 
-`http://www.linux.com/learn/tutorials/442451-inspecting-disk-io-performance-with-fio/`
+http://www.linux.com/learn/tutorials/442451-inspecting-disk-io-performance-with-fio/
