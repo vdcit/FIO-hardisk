@@ -3,7 +3,7 @@
 
 # I. Giới thiệu về FIO 
 
-FIO viết tắt của Flexible IO Tester là công cụ được sử dụng để cho phép test hiệu năng của IO. 
+FIO viết tắt của Flexible IO Tester là công cụ được sử dụng để cho phép test hiệu năng của ổ cứng. 
 
 # II. FIO làm việc như thế nào
 
