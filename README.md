@@ -31,14 +31,14 @@ directory=/partition/data
 ```
 
 Giải thích một số parameters:
-- rw = randread: Đọc file theo đọc ngẫu nhiên
-- Có thể nhận nhưng giá trị sau đây:
-- read:            Đọc tuần tự
-- write:           Ghi tuần tự
-- randwrite:       Ghi Random
-- randread:        Đọc random
-- rw,readwrite:    Cả đọc và ghi tuần tự
-- randrw:          Cả đọc và ghi random
+- rw nh 
+-- randread: Đọc file theo đọc ngẫu nhiên
+-- read:            Đọc tuần tự
+-- write:           Ghi tuần tự
+-- randwrite:       Ghi Random
+-- randread:        Đọc random
+-- rw,readwrite:    Cả đọc và ghi tuần tự
+-- randrw:          Cả đọc và ghi random
 - bs = 4k,4k: block size là 4k
 - numjobs = 1: 1 tiến trình được thực hiện 
 - size = 500m: Quá trình đọc file là 500m
@@ -50,14 +50,14 @@ Giải thích một số parameters:
 
 3.2.1 Kiểm tra quá trình ghi:
 ```sh
-[seqWrites]<br>
-ioengine=libaio<br>
-iodepth=8<br>
-rw=write<br>
-bs=4,4k<br>
-direct=1<br>
-numjobs=1<br>
-size=1g<br>
+[seqWrites]
+ioengine=libaio
+iodepth=8
+rw=write
+bs=4,4k
+direct=1
+numjobs=1
+size=1g
 directory=/partition/data<br>
 ```
 3.2.2 Có thể tạo ra đồng thời nhiều quá trình ghi file bằng thay đổi giá trị numjobs
