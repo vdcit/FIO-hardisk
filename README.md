@@ -32,13 +32,13 @@ directory=/partition/data
 
 Giải thích một số parameters:
 - rw nh 
--- randread: Đọc file theo đọc ngẫu nhiên
--- read:            Đọc tuần tự
--- write:           Ghi tuần tự
--- randwrite:       Ghi Random
--- randread:        Đọc random
--- rw,readwrite:    Cả đọc và ghi tuần tự
--- randrw:          Cả đọc và ghi random
+ -- randread: Đọc file theo đọc ngẫu nhiên
+ -- read:            Đọc tuần tự
+ -- write:           Ghi tuần tự
+ -- randwrite:       Ghi Random
+ -- randread:        Đọc random
+ -- rw,readwrite:    Cả đọc và ghi tuần tự
+ -- randrw:          Cả đọc và ghi random
 - bs = 4k,4k: block size là 4k
 - numjobs = 1: 1 tiến trình được thực hiện 
 - size = 500m: Quá trình đọc file là 500m
