@@ -7,7 +7,7 @@ FIO viết tắt của Flexible IO Tester là công cụ được sử dụng đ
 
 # II. FIO làm việc như thế nào
 
-Bước đầu tiên là mô phỏng các công việc, sau đó viết viết 1 job file mô phỏng quá trình cài đặt. Trong job file sẽ chứa các phân đoạn global được sử dụng để chia sẻ các parameters, một hoặc nhiều tiến trình có thể được đặt trong file job này. Khi file job này chạy sẽ phân tích file và thiết lập mọi thứ như miêu tả. Trong file job có thể chứa các parameter cơ bản sau:
+Bước đầu tiên là mô phỏng các công việc, sau đó viết viết 1 job file mô phỏng quá trình cài đặt. Trong job file sẽ chứa các phân đoạn global được sử dụng để chia sẻ các parameters, một hoặc nhiều tiến trình có thể được đặt trong file job này. Khi file job này chạy sẽ phân tích file và thiết lập mọi thứ như trong file yêu cầu.
 
 # III. Quá trình tiến hành kiểm tra
 
@@ -31,14 +31,15 @@ directory=/partition/data
 ```
 
 Giải thích một số parameters:
-- rw nh 
- -- randread: Đọc file theo đọc ngẫu nhiên
- -- read:            Đọc tuần tự
- -- write:           Ghi tuần tự
- -- randwrite:       Ghi Random
- -- randread:        Đọc random
- -- rw,readwrite:    Cả đọc và ghi tuần tự
- -- randrw:          Cả đọc và ghi random
+- rw có thể nhân giá trị sau:
+  <ul>
+  <li>randread:    Đọc file ngẫu nhiên</li>
+  <li>randwrite:   Ghi Random</li>
+  <li>randrw:      Cả đọc và ghi random</li>
+  <li>read:        Đọc tuần tự</li>
+  <li>write:       Ghi tuần tự</li>
+  <li>rw,readwrite:    Cả đọc và ghi tuần tự</li>
+ </ul>
 - bs = 4k,4k: block size là 4k
 - numjobs = 1: 1 tiến trình được thực hiện 
 - size = 500m: Quá trình đọc file là 500m
@@ -46,7 +47,7 @@ Giải thích một số parameters:
  
 - B5: Sau khi tạo xong file ta thực hiện lệnh sau: `fio randread.fio`
 
-##3.2 Một số ví dụ khác
+##3.2 Một số ví dụ
 
 3.2.1 Kiểm tra quá trình ghi:
 ```sh
