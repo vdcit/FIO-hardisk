@@ -34,8 +34,8 @@ Giải thích một số parameters:
 - rw có thể nhân giá trị sau:
   <ul>
   <li>randread:    Đọc file ngẫu nhiên</li>
-  <li>randwrite:   Ghi Random</li>
-  <li>randrw:      Cả đọc và ghi random</li>
+  <li>randwrite:   Ghi ngẫu nhiên</li>
+  <li>randrw:      Cả đọc và ghi ngẫu nhiên</li>
   <li>read:        Đọc tuần tự</li>
   <li>write:       Ghi tuần tự</li>
   <li>rw,readwrite:    Cả đọc và ghi tuần tự</li>
