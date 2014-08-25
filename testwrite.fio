@@ -1,0 +1,4 @@
+[seqWrites]
+rw=write
+size=5g
+directory=/
